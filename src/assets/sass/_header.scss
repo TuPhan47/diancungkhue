@@ -1,0 +1,25 @@
+.l-header {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    // right: calc(50% - 60rem); 
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 1.2rem 2.4rem;
+        width: 100%;
+        max-width: 120rem; 
+        box-sizing: border-box;
+        transition: all 0.7s;
+    }
+}
+#sitelogo {
+    width: 18rem;
+    transition: all 0.7s;
+    & img {
+        image-rendering: crisp-edges;
+    }
+
+}

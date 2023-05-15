@@ -1,0 +1,26 @@
+.btn {
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.6rem;
+	line-height: 1;
+	padding: 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	overflow: hidden;
+	min-width: 16.8rem;
+    background-color: var(--primary);
+	border-radius: 1.5rem;
+	border: 0;
+	box-sizing: border-box;
+	&--white {
+		color: var(--primary);
+		background-color: var(--white);
+		border: 0.2rem solid var(--primary);
+	}
+}
+.no-touchevents .btn:hover{
+	text-decoration: none;
+	opacity: 0.7;
+}

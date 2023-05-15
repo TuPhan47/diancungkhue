@@ -1,0 +1,413 @@
+@@include('header.html', {"title": "Module"})
+<style>
+	.style-guide-heading{
+		border-bottom: 1px solid #344767;
+		margin: 8rem 2rem 4rem;
+		font-size: 3rem;
+		color: #344767;
+		font-weight: bold;
+	}
+	.style-guide-heading-medium{
+		margin: 4rem 0 2rem;
+		font-size: 2rem;
+		color: #000;
+		font-weight: bold;
+	}
+	#style-guide-nav{
+		background: #344767;
+		top: 100px;
+		right: 0;
+		position: fixed;
+		z-index: 99;
+		padding: 2rem;
+	}
+	#style-guide-nav.hide{
+		transform: translateX(80%);
+	}
+	#style-guide-nav a{
+		color: #fff;
+		padding: 0.5rem 0;
+		display: block;
+	}
+</style>
+
+<div id="l-container">
+	<noscript>
+		<div class="box-noscript">
+			<p>このページでは JavaScriptを使用しています。</p>
+			<p>お使いのWEBブラウザで JavaScriptを有効にしてからご覧ください。</p>
+		</div>
+	</noscript>
+	<div id="l-main">
+		<ul id="style-guide-nav"></ul>
+
+		<!-- MainVisual -->
+		<div class="style-guide-heading" id="mv">MainVisual</div>
+		<!-- End MainVisual -->
+
+		<div class="wrp-container-fluid">
+
+			<!-- Wrapper -->
+			<div class="style-guide-heading mt0" id="wrapper">Wrapper</div>
+			<div class="wrp-container">
+				<div class="style-guide-heading-medium">Container wrapper</div>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum facere ipsa laboriosam iusto repudiandae ut molestiae nulla sunt harum? Sint perferendis delectus blanditiis a molestias, ex cum soluta quam eaque.</p>
+				<div class="style-guide-heading-medium">Button wrapper</div>
+				<div class="wrp-button">
+					<a href="#" class="btn"><span>Send</span></a>
+				</div>
+			</div>
+			<!-- End Wrapper -->
+
+			<!-- Grid -->
+			<div class="style-guide-heading" id="grids">Grid</div>
+			<div class="wrp-container">
+				<div class="style-guide-heading-medium">Normal Grid</div>
+				<div class="grid-row" style="margin-bottom:20px">
+					<div class="grid-col--12"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+				</div>
+				<div class="grid-row" style="margin-bottom:20px">
+					<div class="grid-col--6"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--6"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+				</div>
+				<div class="grid-row" style="margin-bottom:20px">
+					<div class="grid-col--4"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--4"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--4"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+				</div>
+				<div class="grid-row" style="margin-bottom:20px">
+					<div class="grid-col--3"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--3"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--3"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--3"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--1"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+				</div>
+				<div class="style-guide-heading-medium">Smartphone Grid</div>
+				<div class="grid-row" style="margin-bottom:20px">
+					<div class="grid-col--4 __isSP"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--4 __isSP"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--4 __isSP"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+				</div>
+				<div class="style-guide-heading-medium">Tablet Grid</div>
+				<div class="grid-row" style="margin-bottom:20px">
+					<div class="grid-col--3 __isSP __isTablet"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--3 __isSP __isTablet"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--3 __isSP __isTablet"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+					<div class="grid-col--3 __isSP __isTablet"><span style="display:block; height: 20px; margin: 0 0 10px; background-color:#dfdfdf"></span></div>
+				</div>
+			</div>
+			<!-- End Grid -->
+
+			<!-- Headings -->
+			<div class="style-guide-heading" id="Typography">Headings</div>
+			<div class="wrp-container">
+				<h1 class="hdg hdg-lv1">Headings H1</h1>
+				<h2 class="hdg hdg-lv2">Headings H2</h2>
+				<h3 class="hdg hdg-lv3">Headings H3</h3>
+				<h4 class="hdg hdg-lv4">Headings H4</h4>
+				<h5 class="hdg hdg-lv5">Headings H5</h5>
+			</div>
+			<!-- End Headings -->
+
+			<!-- Buttons -->
+			<div class="style-guide-heading" id="buttons">Buttons</div>
+			<div class="wrp-container">
+				<p class="mb15"><a href="#" class="btn"><span>Buttons</span></a></p>
+				<p class="mb15"><a href="#" class="btn btn--white"><span>Buttons</span></a></p>
+				<p class="mb15"><a href="#" class="btn is-disabled"><span>Buttons</span></a></p>
+			</div>
+			<!-- End Buttons  -->
+
+			<div class="style-guide-heading" id="tables">Tables</div>
+			<div class="wrp-container">
+				
+			</div>
+			<div class="style-guide-heading" id="image">Block</div>
+			<div class="wrp-container">
+				<div class="style-guide-heading-medium">Box Cate</div>
+				<div class="grid-row box-cate">
+					<div class="grid-col--6 box-cate__item">
+						<a href="#" class="box-cate__inner">
+							<figure class="box-cate__img"><img src="http://placehold.jp/260x260.png" alt="" class="fluid-image"></figure>
+							<h3 class="hdg hdg-lv3 box-cate__title"><span>Title (n)</span></h3>
+						</a>
+					</div>
+					<div class="grid-col--6 box-cate__item">
+						<a href="#" class="box-cate__inner">
+							<figure class="box-cate__img"><img src="http://placehold.jp/260x260.png" alt="" class="fluid-image"></figure>
+							<h3 class="hdg hdg-lv3 box-cate__title"><span>Title (n)</span></h3>
+						</a>
+					</div>
+				</div>
+				
+				<div class="style-guide-heading-medium">Box Post</div>
+				<div class="grid-row box-post">
+					<div class="grid-col--4 box-post__item">
+						<a href="#" class="box-post__inner">
+							<figure class="box-post__img"><img src="http://placehold.jp/378x226.png" alt="" class="fluid-image"></figure>
+							<div class="box-post__cont">
+								<p class="box-post__time">Time post: 3:18 PM 21/04/2013</p>
+								<h2 class="hdg hdg-lv2 box-post__title">Sushi Osaka 88 Sushi Osaka 88 Sushi Osaka 88 Sushi Osaka 88 Sushi Osaka 88 Sushi Osaka 88</h2>
+								<p class="box-post__lct">4 Đường Hoa Cau, Phường 7, Phú Nhuận</p>
+							</div>
+						</a>
+					</div>
+					<div class="grid-col--4 box-post__item">
+						<a href="#" class="box-post__inner">
+							<figure class="box-post__img"><img src="http://placehold.jp/378x226.png" alt="" class="fluid-image"></figure>
+							<div class="box-post__cont">
+								<p class="box-post__time">Time post: 3:18 PM 21/04/2013</p>
+								<h2 class="hdg hdg-lv2 box-post__title">Sushi Osaka 88</h2>
+								<p class="box-post__lct">4 Đường Hoa Cau, Phường 7, Phú Nhuận</p>
+							</div>
+						</a>
+					</div>
+					<div class="grid-col--4 box-post__item">
+						<a href="#" class="box-post__inner">
+							<figure class="box-post__img"><img src="http://placehold.jp/378x226.png" alt="" class="fluid-image"></figure>
+							<div class="box-post__cont">
+								<p class="box-post__time">Time post: 3:18 PM 21/04/2013</p>
+								<h2 class="hdg hdg-lv2 box-post__title">Sushi Osaka 88</h2>
+								<p class="box-post__lct">4 Đường Hoa Cau, Phường 7, Phú Nhuận</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="style-guide-heading-medium">Box Point</div>
+				<div class="wrp-highlight">
+					<h2 class="hdg hdg-lv2">Headings H2</h2>
+					<div class="grid-row box-highlight">
+						<div class="grid-col--6 box-highlight__item box-highlight__item--lg">
+							<a href="#" class="box-highlight__inner">
+								<figure class="box-highlight__img"><img src="http://placehold.jp/622x611.png" alt="" class="fluid-image"></figure>
+								<div class="box-highlight__cont">
+									<h3 class="hdg hdg-lv2 box-highlight__title">5 thói quen ăn uống giúp cải thiện sức khỏe gan</h3>
+								</div>
+							</a>
+						</div>
+						<div class="grid-col--6 box-highlight-row">
+							<div class="grid-col--6 box-highlight__item--sm">
+								<a href="#" class="box-highlight__inner">
+									<figure class="box-highlight__img"><img src="http://placehold.jp/309x231.png" alt="" class="fluid-image"></figure>
+									<div class="box-highlight__cont">
+										<h3 class="hdg hdg-lv2 box-highlight__title">Uống nhiều nước có giúp bạn giảm cân?</h3>
+									</div>
+								</a>
+							</div>
+							<div class="grid-col--6 box-highlight__item--sm">
+								<a href="#" class="box-highlight__inner">
+									<figure class="box-highlight__img"><img src="http://placehold.jp/309x231.png" alt="" class="fluid-image"></figure>
+									<div class="box-highlight__cont">
+										<h3 class="hdg hdg-lv2 box-highlight__title">Uống nhiều nước có giúp bạn giảm cân?</h3>
+									</div>
+								</a>
+							</div>
+							<div class="grid-col--6 box-highlight__item--sm">
+								<a href="#" class="box-highlight__inner">
+									<figure class="box-highlight__img"><img src="http://placehold.jp/309x231.png" alt="" class="fluid-image"></figure>
+									<div class="box-highlight__cont">
+										<h3 class="hdg hdg-lv2 box-highlight__title">Uống nhiều nước có giúp bạn giảm cân?</h3>
+									</div>
+								</a>
+							</div>
+							<div class="grid-col--6 box-highlight__item--sm">
+								<a href="#" class="box-highlight__inner">
+									<figure class="box-highlight__img"><img src="http://placehold.jp/309x231.png" alt="" class="fluid-image"></figure>
+									<div class="box-highlight__cont">
+										<h3 class="hdg hdg-lv2 box-highlight__title">Uống nhiều nước có giúp bạn giảm cân?</h3>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+			</div>
+
+			<div class="style-guide-heading" id="JSModules">JS Modules</div>
+			<div class="wrp-container">
+				<div class="style-guide-heading-medium">Slick Slider</div>
+				<!-- <ul class="grid-row">
+					<li class="js-slider__item grid-col--4 swiper-slide">
+						<a href="#" class="js-slider__inner">
+							<img src="http://placehold.jp/408x200.png" alt="" class="fluid-image js-slider__img">
+							<span class="js-slider__tit">Sushi Osaka 88Sushi Osaka 88Sushi Osaka 88Sushi Osaka 88Sushi Osaka 88</span>
+						</a>
+					</li>
+					<li class="js-slider__item grid-col--4">
+						<a href="#" class="js-slider__inner">
+							<img src="http://placehold.jp/408x200.png" alt="" class="fluid-image js-slider__img">
+							<span class="js-slider__tit">Title</span>
+						</a>
+					</li>
+					<li class="js-slider__item grid-col--4">
+						<a href="#" class="js-slider__inner">
+							<img src="http://placehold.jp/408x200.png" alt="" class="fluid-image js-slider__img">
+							<span class="js-slider__tit">Title</span>
+						</a>
+					</li>
+					<li class="js-slider__item grid-col--4">
+						<a href="#" class="js-slider__inner">
+							<img src="http://placehold.jp/420x200.png" alt="" class="fluid-image js-slider__img">
+							<span class="js-slider__tit">Title</span>
+						</a>
+					</li>
+					<li class="js-slider__item grid-col--4">
+						<a href="#" class="js-slider__inner">
+							<img src="http://placehold.jp/420x200.png" alt="" class="fluid-image js-slider__img">
+							<span class="js-slider__tit">Title</span>
+						</a>
+					</li>
+				</ul> -->
+
+				<!-- Slider main container -->
+				<div class="swiper js-slider">
+				<!-- Additional required wrapper -->
+
+					<!-- Slides -->
+
+					<ul class="js-slider-wrp swiper-wrapper">
+						<li class="js-slider__item swiper-slide">
+							<a href="#" class="js-slider__inner">
+								<img src="http://placehold.jp/408x200.png" alt="" class="fluid-image js-slider__img">
+								<span class="js-slider__tit">Sushi Osaka 88Sushi Osaka 88Sushi Osaka 88Sushi Osaka 88Sushi Osaka 88</span>
+							</a>
+						</li>
+						<li class="js-slider__item swiper-slide">
+							<a href="#" class="js-slider__inner">
+								<img src="http://placehold.jp/408x200.png" alt="" class="fluid-image js-slider__img">
+								<span class="js-slider__tit">Title</span>
+							</a>
+						</li>
+						<li class="js-slider__item swiper-slide">
+							<a href="#" class="js-slider__inner">
+								<img src="http://placehold.jp/408x200.png" alt="" class="fluid-image js-slider__img">
+								<span class="js-slider__tit">Title</span>
+							</a>
+						</li>
+						<li class="js-slider__item swiper-slide">
+							<a href="#" class="js-slider__inner">
+								<img src="http://placehold.jp/420x200.png" alt="" class="fluid-image js-slider__img">
+								<span class="js-slider__tit">Title</span>
+							</a>
+						</li>
+						<li class="js-slider__item swiper-slide">
+							<a href="#" class="js-slider__inner">
+								<img src="http://placehold.jp/420x200.png" alt="" class="fluid-image js-slider__img">
+								<span class="js-slider__tit">Title</span>
+							</a>
+						</li>
+					</ul>
+
+
+
+				<!-- If we need pagination -->
+				<div class="swiper-pagination js-slider__pagination"></div>
+					
+
+				</div>
+
+				
+
+
+				<div class="style-guide-heading-medium">Match Height</div>
+				<ul class="grid-row">
+					<li class="grid-col--6">
+						<p class="js-matchheight" style="background-color: aquamarine;">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+					</li>
+					<li class="grid-col--6">
+						<p class="js-matchheight" style="background-color: aquamarine;">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+					</li>
+				</ul>
+				<div class="style-guide-heading-medium">Full Background (data-bgsize="cover", data-position="left top")</div>
+				<figure>
+					<div class="js-fullbg" data-position="left top" data-bgsize="cover" style="height: 0; padding-bottom: 56.25%"><img src="https://dummyimage.com/800x600/dfdfdf/fff.png" alt="" class="fluid-image"></div>
+				</figure>
+				<div class="style-guide-heading-medium">Full Background (data-bgsize="contain", data-position="center")</div>
+				<figure>
+					<div class="js-fullbg" data-position="center" data-bgsize="contain" style="height: 0; padding-bottom: 56.25%"><img src="https://dummyimage.com/800x600/dfdfdf/fff.png" alt="" class="fluid-image"></div>
+				</figure>
+			</div>
+
+			<div class="style-guide-heading-medium">Slider Media</div>
+			<div class="grid-row js-slider-media">
+				<div class="js-slider-media__item">
+					<a href="#" class="js-slider-media__inner">
+						<figure class="js-slider-media__img"><img src="http://placehold.jp/923x451.png" alt="" class="fluid-image"></figure>
+						<div class="js-slider-media__cont">
+							<h2 class="hdg hdg-lv2 js-slider-media__title">Vũng Tàu</h2>
+							<p class="js-slider-media__txt">Nhiệt độ: 35°C</p>
+							<p class="js-slider-media__link">Khám phá Vũng Tàu</p>
+						</div>
+					</a>
+				</div>
+				<div class="js-slider-media__item">
+					<a href="#" class="js-slider-media__inner">
+						<figure class="js-slider-media__img"><img src="http://placehold.jp/923x451.png" alt="" class="fluid-image"></figure>
+						<div class="js-slider-media__cont">
+							<h2 class="hdg hdg-lv2 js-slider-media__title">Vũng Tàu</h2>
+							<p class="js-slider-media__txt">Nhiệt độ: 35°C</p>
+						</div>
+					</a>
+				</div>
+				<div class="js-slider-media__item">
+					<a href="#" class="js-slider-media__inner">
+						<figure class="js-slider-media__img"><img src="http://placehold.jp/923x451.png" alt="" class="fluid-image"></figure>
+						<div class="js-slider-media__cont">
+							<h2 class="hdg hdg-lv2 js-slider-media__title">Vũng Tàu</h2>
+							<p class="js-slider-media__txt">Nhiệt độ: 35°C</p>
+						</div>
+					</a>
+				</div>
+				<div class="js-slider-media__item">
+					<a href="#" class="js-slider-media__inner">
+						<figure class="js-slider-media__img"><img src="http://placehold.jp/923x451.png" alt="" class="fluid-image"></figure>
+						<div class="js-slider-media__cont">
+							<h2 class="hdg hdg-lv2 js-slider-media__title">Vũng Tàu</h2>
+							<p class="js-slider-media__txt">Nhiệt độ: 35°C</p>
+						</div>
+					</a>
+				</div>
+				<div class="js-slider-media__item">
+					<a href="#" class="js-slider-media__inner">
+						<figure class="js-slider-media__img"><img src="http://placehold.jp/923x451.png" alt="" class="fluid-image"></figure>
+						<div class="js-slider-media__cont">
+							<h2 class="hdg hdg-lv2 js-slider-media__title">Vũng Tàu</h2>
+							<p class="js-slider-media__txt">Nhiệt độ: 35°C</p>
+						</div>
+					</a>
+				</div>
+				<div class="js-slider-media__item">
+					<a href="#" class="js-slider-media__inner">
+						<figure class="js-slider-media__img"><img src="http://placehold.jp/923x451.png" alt="" class="fluid-image"></figure>
+						<div class="js-slider-media__cont">
+							<h2 class="hdg hdg-lv2 js-slider-media__title">Vũng Tàu</h2>
+							<p class="js-slider-media__txt">Nhiệt độ: 35°C</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<p class="result"></p>
+
+
+		</div>
+	</div><!-- /#main -->
+</div><!-- /#container -->
+@@include('footer.html')
+@@include('html_end.html')

@@ -1,0 +1,33 @@
+{
+  "name": "www.guis-theme.co.jp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "gulp build",
+    "dev": "gulp",
+    "prod": "cross-env NODE_ENV=prod gulp"
+  },
+  "author": "Mr-Guis-Tu",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-js-import": "^1.0.6",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-mozjpeg": "^10.0.0",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "swiper": "^9.3.1"
+  }
+}
