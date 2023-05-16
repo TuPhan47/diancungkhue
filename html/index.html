@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -45,7 +48,7 @@
 			<p>お使いのWEBブラウザで JavaScriptを有効にしてからご覧ください。</p>
 		</div>
 	</noscript>
-	<div id="l-loading">
+	<!-- <div id="l-loading">
 		<div class="l-loading-line line-left"></div>
 		<div class="l-loading-line line-right"></div>
 		<div class="l-loading-line line-top"></div>
@@ -54,7 +57,7 @@
 		<p id="l-loading__logo">
 			<img src="./assets/images/logo-loading.gif" alt="" class="fluid-image">
 		</p>
-	</div>
+	</div> -->
 	<div id="l-main">
 		<section class="mainVisual-top mainVisual">
 			<div class="mainVisual__cont" data-index="1">
@@ -78,41 +81,40 @@
 				<section id="what-today">
 					<div class="wrp-container">
 						<h2 class="hdg hdg-lv2">Hôm nay ăn gì?</h2>
-						<div class="swiper js-slider box-base">
-							<ul class="js-slider-wrp swiper-wrapper">
-								<li class="js-slider__item swiper-slide">
-									<a href="#" class="js-slider__inner">
-										<img src="http://placehold.jp/408x200.png" alt="" class="fluid-image js-slider__img">
-										<span class="js-slider__tit">Sushi Osaka 88Sushi Osaka 88Sushi Osaka 88Sushi Osaka 88Sushi Osaka 88</span>
-									</a>
-								</li>
-								<li class="js-slider__item swiper-slide">
-									<a href="#" class="js-slider__inner">
-										<img src="http://placehold.jp/408x200.png" alt="" class="fluid-image js-slider__img">
-										<span class="js-slider__tit">Title</span>
-									</a>
-								</li>
-								<li class="js-slider__item swiper-slide">
-									<a href="#" class="js-slider__inner">
-										<img src="http://placehold.jp/408x200.png" alt="" class="fluid-image js-slider__img">
-										<span class="js-slider__tit">Title</span>
-									</a>
-								</li>
-								<li class="js-slider__item swiper-slide">
-									<a href="#" class="js-slider__inner">
-										<img src="http://placehold.jp/420x200.png" alt="" class="fluid-image js-slider__img">
-										<span class="js-slider__tit">Title</span>
-									</a>
-								</li>
-								<li class="js-slider__item swiper-slide">
-									<a href="#" class="js-slider__inner">
-										<img src="http://placehold.jp/420x200.png" alt="" class="fluid-image js-slider__img">
-										<span class="js-slider__tit">Title</span>
-									</a>
-								</li>
-							</ul>
-							<!-- If we need pagination -->
-							<div class="swiper-pagination js-slider__pagination"></div>
+						<div class="grid-row box-point">
+							<div class="grid-col--4 box-point__item">
+								<a href="#" class="box-point__inner">
+									<figure class="box-point__img">
+										<img src="http://placehold.jp/420x226.png" alt="" class="fluid-image">
+										<figcaption class="box-point__cap">#tab</figcaption>
+									</figure>
+									<div class="box-point__cont">
+										<h3 class="box-point__tit">Sushi Osaka 88</h3>
+									</div>
+								</a>
+							</div>
+							<div class="grid-col--4 box-point__item">
+								<a href="#" class="box-point__inner">
+									<figure class="box-point__img">
+										<img src="http://placehold.jp/420x226.png" alt="" class="fluid-image">
+										<figcaption class="box-point__cap">#tab</figcaption>
+									</figure>
+									<div class="box-point__cont">
+										<h3 class="box-point__tit">Sushi Osaka 88</h3>
+									</div>
+								</a>
+							</div>
+							<div class="grid-col--4 box-point__item">
+								<a href="#" class="box-point__inner">
+									<figure class="box-point__img">
+										<img src="http://placehold.jp/420x226.png" alt="" class="fluid-image">
+										<figcaption class="box-point__cap">#tab</figcaption>
+									</figure>
+									<div class="box-point__cont">
+										<h3 class="box-point__tit">Sushi Osaka 88</h3>
+									</div>
+								</a>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -248,9 +250,45 @@
 </div><!-- /#container -->
 <footer id="l-footer" class="l-footer">
 	<div class="l-footer__wrapper">
-		<p class="l-footer__logo">LOGO</p>
-		<p class="txt-copyright"><small>All rights reserved. Copyright &copy; 2023 PHANTU.Dev</small></p>
+		<div class="l-footer__contact">
+			<p class="l-footer__logo"><img src="./assets/images/logo.png" alt="" class="fluid-image"></p>
+			<ul class="l-footer__lst-contact">
+				<li><i class="fa-solid fa-location-dot"></i>205 Lê Văn Sỹ, Phường 13, Quận Phú Nhuận, TPHCM</li>
+				<li><i class="fa-solid fa-phone"></i>0858090767</li>
+				<li><a href=""><i class="fa-solid fa-envelope"></i>lienhe@diancungkhue.com</a></li>
+			</ul>
+		</div>
+		<div class="l-footer__nav">
+			<div class="l-footer__nav__ele">
+				<h3 class="l-footer__tit">Blog</h3>
+				<ul class="l-footer__lst">
+					<li><a href="#">Ăn gì hôm nay</a></li>
+					<li><a href="#">Sống khỏe mỗi ngày</a></li>
+					<li><a href="#">Địa điểm mới</a></li>
+				</ul>	
+			</div>
+			<div class="l-footer__nav__ele">
+				<h3 class="l-footer__tit">Sản phẩm</h3>
+				<ul class="l-footer__lst">
+					<li><a href="#">Tốt cho sức khỏe</a></li>
+					<li><a href="#">Giảm cân</a></li>
+					<li><a href="#">Thức uống dinh dưỡng</a></li>
+				</ul>
+			</div>
+			<div class="l-footer__nav__ele">
+				<h3 class="l-footer__tit">Xem thêm về chúng tôi</h3>
+				<p>Đăng ký nhận tin từ chúng tôi</p>
+				<form action="">
+					<input type="email" name="email" class="base-input" placeholder="Email của bạn...">
+					<button class="base-submit">Đăng ký</button>
+				</form>
+			</div>
+			
+		</div>
+		
+		
 	</div>
+	<p class="txt-copyright"><small>All rights reserved. Copyright &copy; 2023 PHANTU.Dev</small></p>
 </footer> 
 </div><!-- /#document -->
 <p class="nav-backtotop"><a href="#l-document">Back to top</a></p>

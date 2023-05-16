@@ -169,19 +169,21 @@ var Common = (function () {
 	//Global menu
 	Common.prototype.globalNavButton = function () {
 		var menuBtn = $(".nav-global-menu");
-		var header = $("#header");
+		var header = $("#l-header");
 		var globalNav = $(".nav-global-wrap");
 		menuBtn && menuBtn.on('click', function(e){
 			e.preventDefault();
 			if(menuBtn.hasClass('is-active')){
 				menuBtn.removeClass('is-active');
 				header.removeClass('is-hover');
+				header.removeClass('is-active');
 				globalNav.removeClass('is-active');
 				$('html').removeClass('is-opened-menu');
 				disableBodyScroll(false, globalNav.get(0));
 			} else{
 				menuBtn.addClass('is-active');
 				header.addClass('is-hover');
+				header.addClass('is-active');
 				globalNav.addClass('is-active');
 				$('html').addClass('is-opened-menu');
 				disableBodyScroll(true, globalNav.get(0));
@@ -475,9 +477,19 @@ $(window).scroll(() => {
 	var headOffset = head.offset().top;
 	var topOffset = $(window).scrollTop();
 	var mvHeight = $('.mainVisual').outerHeight();
+	var navGlobal = $('.nav-global-wrap');
 
-	(topOffset > mvHeight - head.outerHeight()) ? head.addClass('is-animate') : head.removeClass('is-animate');
-
+	if(!head.data('offset')) {
+		head.data('offset', headOffset);
+	}
+	var headOffset = head.data('offset');
+	if(topOffset > mvHeight - head.outerHeight()) {
+		head.addClass('is-animate');
+		navGlobal.addClass('is-hide');
+	} else {
+		head.removeClass('is-animate');
+		navGlobal.removeClass('is-hide');
+	}
 })
 
 let slideIndex = 0;

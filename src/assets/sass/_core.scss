@@ -334,8 +334,8 @@ html{
 }
 body{
 	font-size: 1.4rem;
-	color: #333;
-	background-color: var(--primary);
+	color: #000;
+	background: rgb(249, 236, 216);
 	line-height: 1.4;
 	letter-spacing: 0;
 	font-family: 'Roboto Slab', serif;
@@ -755,26 +755,13 @@ textarea{
 	background-color: transparent;
 	& .l-header__wrapper {
 		max-width: 100%;
-		
 	}
-	
 	& #sitelogo {
 		scale: (0.7);
 	}
-	// right: 5rem;
-	// max-width: 6rem;
-	// height: 6rem;
-	// background-color: var(--primary);
-	// animation: animate-head .3s ease-in-out .6s forwards;
-	// & #sitelogo {
-	// 	opacity: 0;
-	// }
 	& .nav-global-menu {
 		display: block;
 		animation: animate-nav-menu .5s ease-in-out forwards;
-	}
-	& .nav-global-wrap {
-		display: none;
 	}
 }
 
@@ -808,7 +795,6 @@ textarea{
 #l-document{
 	min-height: 99.8vh;
 	min-height: calc(var(--vh, 1vh) * 99.8);
-	padding-bottom: 20rem;
 	box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
@@ -867,7 +853,7 @@ textarea{
 /*>> 3-5. OverLayerConfig [z-index]
 -------------------------------------------------- */
 .nav-global-menu {
-	z-index: 100;
+	z-index: 106;
 }
 .nav-global{
 	z-index: 100;
