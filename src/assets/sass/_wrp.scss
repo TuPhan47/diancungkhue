@@ -6,6 +6,11 @@
 	max-width: 134rem;
 	box-sizing: border-box;
 	z-index: 3;
+	@media only screen and (min-width:769px) and (max-width:960px) {
+		&.__isTablet {
+			padding: 0 4rem;
+		}
+	}
 	&::after {
 		content: "";
 		display: block;
@@ -19,6 +24,12 @@
 		background: var(--white);
 		border-top-left-radius: 3rem;
 		border-top-right-radius: 3rem;
+		@media screen and (max-width: 768px) {
+			padding: 5rem 0;
+			width: 100%;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
 	}
 }
 
