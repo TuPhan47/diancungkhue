@@ -1,7 +1,10 @@
 .l-header {
     position: fixed;
+    left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 1);
+    height: 9rem;
+    animation: animate-header-out .5s ease-in-out forwards;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -12,38 +15,25 @@
         max-width: 120rem; 
         box-sizing: border-box;
         transition: all 0.7s;
-        @media screen and (max-width: 768px) {
-            display: block;
-            padding: 1rem 2rem;
-		}
-    }
-    &::before {
-        content: '';
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 0;
-        background: rgba(0, 0, 0, 0.5);
-        animation: animate-header-out .5s ease-in-out forwards;
     }
     &.is-active {
-        &::before {
-            animation: animate-header .5s ease-in-out forwards;
-        }
+        background: rgba(0, 0, 0, 0.5);
+        animation: animate-header .5s ease-in-out forwards;
+        @media screen and (max-width: 480px) {
+            background: rgba(255, 255, 255, 1);
+		}
         & .nav-global-menu.is-active {
             display: block;
         }
 
     }
 }
-
 @keyframes animate-header {
     0% {
-        height: 0;
+        height: 9rem;
     }
     100% {
-        height: 100%;
+        height: 100vh;
     }
 }
 @keyframes animate-header-out {
@@ -51,9 +41,10 @@
         height: 100%;
     }
     100% {
-        height: 0;
+        height: 9rem;
     }
 }
+
 #sitelogo {
     width: 18rem;
     transition: all 0.7s;

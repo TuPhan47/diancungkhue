@@ -471,6 +471,20 @@ if(document.readyState !== 'loading') {
 	document.addEventListener('DOMContentLoaded', eventHandler);
 }
 
+// Add effect for object
+	function jsScrollAnimation() {
+		var $winHeight = $(window).height();
+		$('.js-animation').each(function(){
+			var $this = $(this);
+			var $thisOffset = $this.offset().top;
+			if($winHeight > $thisOffset) {
+				$this.addClass('animated');
+				var value = $this.attr("data-delay");
+				$this.css('transition-delay', value + 's');
+			}
+		});
+	}
+	jsScrollAnimation();
 
 $(window).scroll(() => {
 	var head = $('.js-animation-head');
@@ -478,11 +492,7 @@ $(window).scroll(() => {
 	var topOffset = $(window).scrollTop();
 	var mvHeight = $('.mainVisual').outerHeight();
 	var navGlobal = $('.nav-global-wrap');
-
-	if(!head.data('offset')) {
-		head.data('offset', headOffset);
-	}
-	var headOffset = head.data('offset');
+	
 	if(topOffset > mvHeight - head.outerHeight()) {
 		head.addClass('is-animate');
 		navGlobal.addClass('is-hide');
@@ -490,6 +500,20 @@ $(window).scroll(() => {
 		head.removeClass('is-animate');
 		navGlobal.removeClass('is-hide');
 	}
+
+	$('.js-animation').each(function(){
+		var $winHeight = $(window).height();
+		var $this = $(this);
+		var $thisOffset = $this.offset().top;
+		
+		var $topOffsetSecond = $(window).scrollTop() + ($winHeight * 0.8);
+		console.log($topOffsetSecond + '-' + $thisOffset);
+		if($topOffsetSecond < $thisOffset) {
+			$this.addClass('animated');
+			var value = $this.attr("data-delay");
+			$this.css('transition-delay', value + 's');
+		}
+	});
 })
 
 let slideIndex = 0;
